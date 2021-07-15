@@ -5,31 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Emoji Translator</title>
         <link href="./emoji.png" rel="shortcut icon" type="image/jpg"/>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <input type="text" id="translator-input">
-        <button id="submit-button">Submit</button>
+        <!-- <button id="submit-button">Submit</button> -->
         <form>
             <p>How would you like to translate?</p>
-            <div class="radio-button-section">
+            <img class="radio-button-section">
+            <img id='helpMe' src="https://image.shutterstock.com/image-vector/vector-help-wanted-smiley-260nw-141622072.jpg" alt="">
                 <input type="radio" name="translation-section" class="translation-section radio-button" value="encode" id="encode" checked>
                 <label for="encode">Encode</label>
+                
+                <p id="encode-help" style="display:none"></p>
             </div>
             <div class="radio-button-section">
                 <input type="radio" name="translation-section" value="translate" class="translation-section radio-button" id="translate">
                 <label for="translate">Translate</label>
+                <p id="translate-help" style="display:none"></p>
             </div>
             <div class="radio-button-section">
                 <input type="radio" name="translation-section" value="madlib" class="translation-section radio-button" id="madlib">
                 <label for="madlib">Madlib</label>
+                <p id="madlib-help" style="display:none"></p>
             </div>
             <div class="radio-button-section">
                 <input type="radio" name="translation-section" value="search" class="translation-section radio-button" id="search">
                 <label for="search">Search</label>
+                <p id="search-help" style="display:none"></p>
             </div>
             <div class="radio-button-section">
                 <input type="radio" name="translation-section" value="random" class="translation-section radio-button" id="random">
                 <label for="random">Random</label>
+                <p id="random-help" style="display:none"></p>
             </div>
         </form>
 
