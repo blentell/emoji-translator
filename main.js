@@ -1,21 +1,20 @@
 const textListener = document.querySelector("#translator-input");
 textListener.addEventListener("input", submit);
 
-
-
 // lets create helper functions
 const helper = document.querySelector("#helpMe");
 helper.addEventListener("click", showHelpers);
 function showHelpers() {
-    const showEncodeHelper = document.querySelector("#encode-help");
-    const showTranslateHelper = document.querySelector("#translate-help");
-    const showMadlibHelper = document.querySelector("#madlib-help");
-    const showSearchHelper = document.querySelector("#search-help");
-    const showRandomHelper = document.querySelector("#random-help");
+	const showEncodeHelper = document.querySelector("#encode-help");
+	const showTranslateHelper = document.querySelector("#translate-help");
+	const showMadlibHelper = document.querySelector("#madlib-help");
+	const showSearchHelper = document.querySelector("#search-help");
+	const showRandomHelper = document.querySelector("#random-help");
 
-    if (showEncodeHelper.style.display === "none") {
-			showEncodeHelper.style.display = "block";
-			showEncodeHelper.innerText = 'This option changes each letter that you type into an emoji that starts with that letter.';		
+	if (showEncodeHelper.style.display === "none") {
+		showEncodeHelper.style.display = "block";
+		showEncodeHelper.innerText =
+			"This option changes each letter that you type into an emoji that starts with that letter.";
 		showTranslateHelper.style.display = "block";
 		showTranslateHelper.innerText =
 			"This option turns the word you type into a matching emoji.";
@@ -28,13 +27,13 @@ function showHelpers() {
 		showRandomHelper.style.display = "block";
 		showRandomHelper.innerText =
 			"This option will randomly do any of the above options.";
-    } else {
-        showEncodeHelper.style.display = "none";
-        showTranslateHelper.style.display = "none";
-        showMadlibHelper.style.display = "none";
-        showSearchHelper.style.display = "none";
-        showRandomHelper.style.display = "none";
-    }
+	} else {
+		showEncodeHelper.style.display = "none";
+		showTranslateHelper.style.display = "none";
+		showMadlibHelper.style.display = "none";
+		showSearchHelper.style.display = "none";
+		showRandomHelper.style.display = "none";
+	}
 }
 function submit() {
 	const inputBox = document.querySelector("#translator-input");
